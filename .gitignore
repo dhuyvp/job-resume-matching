@@ -8,4 +8,5 @@ test.json
 __pycache__
 .vscode
 
-Rules.py
+note.md
+test.py

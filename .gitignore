@@ -1,0 +1,11 @@
+.env
+/venv
+
+/Data
+
+test.json
+
+__pycache__
+.vscode
+
+Rules.py

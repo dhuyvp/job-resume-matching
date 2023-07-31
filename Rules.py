@@ -1,10 +1,14 @@
 import ast
+import json
 from Resources import DEGREES_IMPORTANCE
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 class Rules:
-    def __init__(self, labels, resumes, jobs):
+    def __init__(self, resumes, jobs):
+        with open('Resources/labels.json') as fp:
+            labels = json.load(fp)
+
         self.labels = labels
         self.resumes = resumes
         self.jobs = jobs

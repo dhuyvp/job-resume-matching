@@ -37,13 +37,27 @@ def modifying_type_job(jobs):
 
 
 def get_job_by_id(job_id) :
-    with open('Data/job_description/'+ str(job_id) +'.json', 'r') as f:
-        job = json.load(f)
+    try :
+        with open('Data_Translated/job_description/'+ str(job_id) +'_translated.json', 'r') as f:
+            job = json.load(f)
+
+    except FileNotFoundError as e:
+        print(f"file job {job_id}.json does not exist")
+    else :
+        print(f"file job {job_id}.json was opened successfully.")
+
     return job
 
 def get_resume_by_id(resume_id) :
-    with open('Data/resume/'+ str(resume_id) +'.json', 'r') as f:
-        resume = json.load(f)
+    try :
+        with open('Data_Translated/resume/'+ str(resume_id) +'_translated.json', 'r') as f:
+            resume = json.load(f)
+
+    except FileNotFoundError as e:
+        print(f"file resume {resume_id}.json does not exist")
+    else :
+        print(f"file resume {resume_id}.json was opened successfully.")
+
     return resume
 
 def get_score_by_job_resume_id(job_id, resume_id) :
@@ -74,12 +88,11 @@ def get_score_by_job_resume_id(job_id, resume_id) :
 if __name__ == '__main__':
     load_dotenv()
 
-
     with open('final_results.csv', 'w') as f :
         writer = csv.writer(f)
         writer.writerow(['job_id', 'resume_id', 'skills_score', 'degrees_score'])
 
-        for id in range(4287, 4300) :
+        for id in range(4287, 4289) :
             [skills_score, degrees_score, majors_score] = get_score_by_job_resume_id(id, id) 
             writer.writerow([id, id, skills_score, degrees_score, majors_score])
 

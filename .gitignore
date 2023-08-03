@@ -2,6 +2,7 @@
 /venv
 
 /Data
+/Data_Translated
 
 test.json
 
@@ -10,5 +11,4 @@ __pycache__
 
 note.md
 test.py
-
-Translate.py
+test.ipynb

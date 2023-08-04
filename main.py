@@ -1,6 +1,7 @@
 from JobInfoExtract import JobInfoExtract
 from Rules import Rules
 from dotenv import load_dotenv
+from sentence_transformers import SentenceTransformer
 import json
 import ast
 import csv
@@ -17,10 +18,6 @@ def extraction(job):
     job_extraction = job_extraction.extract_entites(job)
 
     return job_extraction
-
-def job_resume_matching(job, resume) :
-
-    pass
 
 def modifying_type_resume(resumes):
     # for i in range(len(resumes["degrees"])):
@@ -41,6 +38,10 @@ def get_job_by_id(job_id) :
     try :
         with open('Data_Translated/job_description/'+ str(job_id) +'_translated.json', 'r') as f:
             job = json.load(f)
+            job = extraction(job)
+
+            model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+            job['Skills'] = model.encode(job['Skills'])
 
     except FileNotFoundError as e:
         print(f"file job {job_id}.json does not exist")
@@ -54,6 +55,9 @@ def get_resume_by_id(resume_id) :
     try :
         with open('Data_Translated/resume/'+ str(resume_id) +'_translated.json', 'r') as f:
             resume = json.load(f)
+
+            model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+            resume['skills'] = model.encode(resume['skills'])
 
     except FileNotFoundError as e:
         print(f"file resume {resume_id}.json does not exist")
@@ -71,15 +75,15 @@ def get_score_by_job_resume_id(job_id, resume_id) :
     if (job== {}) or (resume == {}) :
         print(f'job {job_id} or resume {resume_id} does not exist\n')
     else :
-    
-        job_extracted = extraction(job)
+        # job_extracted = job
+        # job_extracted = extraction(job)
         # job_extracted = modifying_type_job(job_extracted)
         # resume = modifying_type_resume(resume)
-        rule_object = Rules(resume, job_extracted)
+        rule_object = Rules(resume, job)
         
         # print('type of resume', type(resume), '\ntype of job:', type(job_extracted))
         
-        [skills_score, degrees_score, majors_score] = rule_object.matching_score(resume, job_extracted, job_id)
+        [skills_score, degrees_score, majors_score] = rule_object.matching_score(resume, job, job_id)
         print('skills score:', skills_score)
         print('degrees score:', degrees_score)
         print('majors score:', majors_score)
@@ -93,16 +97,16 @@ if __name__ == '__main__':
     load_dotenv()
 
     job_source = [{}] * 6000
-    for job_id in range(4287, 5330) :
+    for job_id in range(4287, 4290) :
         job_source[job_id] = get_job_by_id(job_id)
 
     resume_source = [{}] * 6000
-    for resume_id in range(4287, 5330) :
+    for resume_id in range(4287, 4290) :
         resume_source[resume_id] = get_resume_by_id(resume_id)
 
     with open('final_results.csv', 'w') as f :
         writer = csv.writer(f)
-        writer.writerow(['job_id', 'resume_id', 'skills_score', 'degrees_score', 'overall_score'])
+        writer.writerow(['job_id', 'resume_id', 'skills_score', 'degrees_score', 'majors_score' 'overall_score'])
 
         for job_id in range(4287, 5324) :
             for resume_id in range(4287, 5324) :

@@ -28,6 +28,7 @@ class Rules:
     # skills matching
     @staticmethod
     def unique_job_skills(job) :
+        return job['Skills']
         unique_job_skills = []
         for i in job['Skills'] :
             if i not in unique_job_skills :
@@ -46,29 +47,38 @@ class Rules:
             #####################333
 
 
-        model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+        # model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
         # model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
 
         score = 0
-        sen = job + resume
+        # sen_embeddings = job + resume
 
         # print('\n\njob before encode: ', job)
         # print('\nresume before encode: ', resume)
 
         
-        sen_embeddings = model.encode(sen)
+        # sen_embeddings = model.encode(sen)
         # print('\n\n\nsen:', sen, '\n\n\n')
         # print('\n\n\nsen_embeddings:', sen_embeddings.shape, '\n\n\n')
         
+        # for i in range(len(job)) :
+        #     if job[i] in resume : 
+        #         score += 1
+        #     else :
+        #         if max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0]) >= 0.4 :
+        #             score += max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0])
+
+        print('print job:',len(job), job)
         for i in range(len(job)) :
-            if job[i] in resume : 
-                score += 1
-            else :
-                if max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0]) >= 0.4 :
-                    score += max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0])
+            # if job[i] in resume : 
+            #     score += 1
+            # else :
+            print([job[i]])
+            if (max( cosine_similarity( [job[i]], resume[:])[0] ) ) >= 0.4 :
+                score += (max( cosine_similarity( [job[i]], resume[:])[0] ) )
 
         score = score / len(job)
-        return round(score, 6)
+        return round(score, 10)
 
 
     def skills_semantic_matching(self, resume, job_index, job_skills) :

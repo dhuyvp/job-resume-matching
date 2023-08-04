@@ -24,11 +24,11 @@ class JobInfoExtract :
         for ent in doc1.ents:
             labels_parts = ent.label_.split('|')
             if labels_parts[0] == 'SKILL':
-                print((ent.text, ent.label_))
+                # print((ent.text, ent.label_))
                 if labels_parts[1].replace('-', ' ') not in job_skills:
                     job_skills.append(labels_parts[1].replace('-', ' '))
 
-        print('match_skills_by_spacy:', job_skills)
+        # print('match_skills_by_spacy:', job_skills)
 
         return job_skills
 
@@ -51,7 +51,7 @@ class JobInfoExtract :
                 if labels_parts[2].replace('-', ' ') not in acceptable_majors:
                     acceptable_majors.append(labels_parts[2].replace('-', ' '))
         
-        print('acceptable majors:', acceptable_majors)
+        # print('acceptable majors:', acceptable_majors)
         
         return acceptable_majors
 
@@ -69,11 +69,11 @@ class JobInfoExtract :
         for ent in doc1.ents:
             labels_parts = ent.label_.split('|')
             if labels_parts[0] == 'DEGREE':
-                print((ent.text, ent.label_))
+                # print((ent.text, ent.label_))
                 if labels_parts[1] not in degree_levels:
                     degree_levels.append(labels_parts[1])
         
-        print('match_degrees_by_spacy:', degree_levels)
+        # print('match_degrees_by_spacy:', degree_levels)
 
         return degree_levels
 
@@ -105,7 +105,7 @@ class JobInfoExtract :
             if skill not in job['Skills']:
                 job['Skills'].append(skill)
 
-        print('extract entities:', job)
+        # print('extract entities:', job)
 
         return job
 

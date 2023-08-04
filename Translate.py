@@ -54,6 +54,7 @@ class Translate :
                 translated_text += translated_chunk + " "
         return translated_text.strip()
 
+
     def translate_recursive(self, data, translator):
         translated_dict = {}
 
@@ -67,6 +68,7 @@ class Translate :
             return [self.translate_recursive(item, translator) for item in data]
         elif isinstance(data, str):
             # Split text into chunks and translate each chunk
+            
             max_chunk_length = 5000  # Adjust this value as needed
             text_chunks = self.split_text(data, max_chunk_length)
             translated_text = self.translate_text_chunks(text_chunks, translator)
@@ -112,5 +114,4 @@ class Translate :
 
             with open('Data_Translated/job_description/' + output_file, 'w', encoding='utf-8') as file:
                 json.dump(translated_data, file, ensure_ascii=False, indent=2)
-
 

@@ -37,6 +37,15 @@ class Rules:
     
 
     def semantic_similarity(self, job, resume):
+        if len(resume) == 0 :
+            if len(job) == 0 :
+                return 0.4
+            return 0
+        elif len(job) == 0 :
+            return 0.5
+            #####################333
+
+
         model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
         # model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
 
@@ -65,6 +74,9 @@ class Rules:
     def skills_semantic_matching(self, resume, job_index, job_skills) :
         resume['Skills job ' + str(job_index) + ' semantic matching'] = 0
         
+        print(job_skills)
+        print(resume['skills'])
+
         resume['Skills job ' + str(job_index) + ' semantic matching'] = self.semantic_similarity(job_skills, resume['skills'])
 
         return resume

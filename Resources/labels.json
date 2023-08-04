@@ -1,4 +1,4 @@
-{"DEGREE":{"BS-LEVEL":["bachelors","bachelor's","bachelor","b.s","b.a","baccalaureate","ba", "ba/bs", "bsba", "b.a", "4-year", "4 year", "four year", "college", "undergraduate", "university", "bsc","bs","be","b.e"],
+{"DEGREE":{"BS-LEVEL":["bachelors","bachelor's","bachelor","b.s","b.a","baccalaureate","ba", "ba/bs", "bsba", "b.a", "4-year", "4 year", "four year", "college", "undergraduate", "university", "bsc","bs","b.e"],
            "MS-LEVEL":["master", "master's","ms", "m.s"],
            "PHD-LEVEL" : ["phd", "ph.d", "doctorate"]},
 "EXPERIENCE-LEVEL" : {"EXPERIENCE" : ["work","practical experience", "work experience", "professional experience", "experience", "proven work experience","experienced"],

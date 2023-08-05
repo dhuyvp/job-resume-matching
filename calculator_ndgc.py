@@ -5,7 +5,9 @@ import numpy as np
 def remove_empty_lists(list1):
         new_list = []
         for item in list1:
-            if item != []:
+            if len(item)== 0 or item[0] == '':
+                pass 
+            else :
                 new_list.append(item)
         return new_list
 
@@ -18,7 +20,11 @@ with open('final_results.csv', 'r') as f :
 
     rows = list(reader)
     rows = remove_empty_lists(rows)
-    
+    # print(rows[0])
+    # print(rows[1])
+    # print(rows[2])
+    # print(rows[3])
+
 
 def guess_x1_x2_x3(x1, x2, x3) :
     id_source_with_label_1 = []
@@ -42,19 +48,12 @@ def guess_x1_x2_x3(x1, x2, x3) :
 
     # print(id_source_with_label_1)
 
-    def remove_empty_lists(list1):
-        new_list = []
-        for item in list1:
-            if item != []:
-                new_list.append(item)
-        return new_list
-
     id_source = []
     rel_mat = [[] for i in range(6000)]
 
 
     for row in rows :
-        if row[0] != 'job_id' :
+        if row[0] != 'job_id':
             job_id = int(row[0])
             resume_id = int(row[1])
             skills_score = float(row[2])
@@ -123,15 +122,4 @@ def guess_x1_x2_x3(x1, x2, x3) :
 
 ################3
 
-ndgc_final = 0
-final_x = []
-for x1 in range(60, 101) :
-    for x2 in range(100-x1 + 1) :
-        for x3 in range(100-x1-x2+1) :
-            total_x = x1+x2+x3
-            val = guess_x1_x2_x3(x1/total_x, x2/total_x, x3/total_x)
-            if (val > ndgc_final) :
-                ndgc_final = val
-                final_x = [x1, x2, x3]
-
-                print('\nupdated x: ',final_x, val, '\n')
+guess_x1_x2_x3(9/14, 4/14, 1/14)

@@ -80,7 +80,7 @@ def guess_x1_x2_x3(x1, x2, x3) :
     ndcg_vec = [0] * 7
     with open('ndcg.csv', 'w') as fw :
         writer = csv.writer(fw)
-        # writer.writerow(['job_id', 'num_resume', 'predict_id','ndcg@1', 'ndcg@3', 'ndcg@5', 'ndcg@7', 'ndcg@10', 'ndcg@20', 'ndcg@50'])
+        writer.writerow(['job_id', 'num_resume', 'predict_id','ndcg@1', 'ndcg@3', 'ndcg@5', 'ndcg@7', 'ndcg@10', 'ndcg@20', 'ndcg@50'])
 
         for job_id in range(4287, 5330) :
             rel_mat[job_id].sort(reverse=True)
@@ -112,7 +112,7 @@ def guess_x1_x2_x3(x1, x2, x3) :
                 ndcg_vec[6] += ndcg50
                 
                 
-                # writer.writerow([job_id, len(rel_mat[job_id]), predict_id, ndcg1, ndcg3, ndcg5, ndcg7, ndcg10, ndcg20, ndcg50])
+                writer.writerow([job_id, len(rel_mat[job_id]), predict_id, ndcg1, ndcg3, ndcg5, ndcg7, ndcg10, ndcg20, ndcg50])
 
 
     print('number of jobs:', num_job)

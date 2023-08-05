@@ -21,7 +21,6 @@ executing==1.2.0
 filelock==3.12.2
 frozenlist==1.4.0
 fsspec==2023.6.0
-googletrans==4.0.0rc1
 h11==0.9.0
 h2==3.2.0
 hpack==3.0.0
@@ -112,6 +111,8 @@ urllib3==2.0.4
 wasabi==1.1.2
 wcwidth==0.2.6
 yarl==1.9.2
-sentence_transformers==*
-spacy==*
-python-dotenv==*
+sentence_transformers==2.2.2
+spacy==3.6.0
+python-dotenv==1.0.0
+scikit-learn==1.3.0
+googletrans==3.1.0a0

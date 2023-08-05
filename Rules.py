@@ -68,12 +68,12 @@ class Rules:
         #         if max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0]) >= 0.4 :
         #             score += max(cosine_similarity([sen_embeddings[i]], sen_embeddings[len(job):])[0])
 
-        print('print job:',len(job), job)
+        # print('print job:',len(job), job)
         for i in range(len(job)) :
             # if job[i] in resume : 
             #     score += 1
             # else :
-            print([job[i]])
+            # print([job[i]])
             if (max( cosine_similarity( [job[i]], resume[:])[0] ) ) >= 0.4 :
                 score += (max( cosine_similarity( [job[i]], resume[:])[0] ) )
 
@@ -84,8 +84,8 @@ class Rules:
     def skills_semantic_matching(self, resume, job_index, job_skills) :
         resume['Skills job ' + str(job_index) + ' semantic matching'] = 0
         
-        print(job_skills)
-        print(resume['skills'])
+        # print(job_skills)
+        # print(resume['skills'])
 
         resume['Skills job ' + str(job_index) + ' semantic matching'] = self.semantic_similarity(job_skills, resume['skills'])
 
@@ -126,11 +126,11 @@ class Rules:
 
         # # print('job min degree: ',job_min_degree)
 
-        resume['Degree job ' + str(job_index) + ' matching'] = self.assign_degree_matching(match_scores)
+        # resume['Degree job ' + str(job_index) + ' matching'] = self.assign_degree_matching(match_scores)
 
         # # print('check degrees score:', self.assign_degree_matching(match_scores))
 
-        return resume
+        return self.assign_degree_matching(match_scores)
 
     ##########################################
     #major matching
@@ -180,18 +180,18 @@ class Rules:
     def matching_score(self, resume, job, job_index):
         #matching skills
         job_skills = self.unique_job_skills(job)
-        resume = self.skills_semantic_matching(resume, job_index, job_skills)
+        # resume = self.skills_semantic_matching(resume, job_index, job_skills)
 
-        skills_score = 0 \
-            + resume['Skills job ' + str(job_index) + ' semantic matching']
+        skills_score = self.semantic_similarity(job_skills, resume['skills'])
 
         #matching degrees
-        resume = self.degree_matching(resume, job, job_index)
-        degrees_score = resume['Degree job ' + str(job_index) + ' matching']
+        # resume = self.degree_matching(resume, job, job_index)
+        # degrees_score = resume['Degree job ' + str(job_index) + ' matching']
+        degrees_score = self.degree_matching(resume, job, job_index)
 
         #matching majors
-        resume = self.major_matching(resume, job, job_index)
-        majors_score = resume['Major job ' + str(job_index) + ' matching']
+        # resume = self.major_matching(resume, job, job_index)
+        majors_score = self.get_major_score(resume,job)
 
         return [skills_score, degrees_score, majors_score]
     

@@ -84,24 +84,24 @@ def get_score_by_job_resume_id(job_id, resume_id) :
         # print('type of resume', type(resume), '\ntype of job:', type(job_extracted))
         
         [skills_score, degrees_score, majors_score] = rule_object.matching_score(resume, job, job_id)
-        print('skills score:', skills_score)
-        print('degrees score:', degrees_score)
-        print('majors score:', majors_score)
-        print('overall score:', (skills_score*2+majors_score+degrees_score)/4)
-        print(f'Done job {job_id} or resume {resume_id}\n')
+        # print('skills score:', skills_score)
+        # print('degrees score:', degrees_score)
+        # print('majors score:', majors_score)
+        # print('overall score:', (skills_score*2+majors_score+degrees_score)/4)
+        print(f'Done job {job_id} and resume {resume_id}\n')
 
 
     return [skills_score, degrees_score, majors_score]
 
 if __name__ == '__main__':
-    load_dotenv()
+    # load_dotenv()
 
     job_source = [{}] * 6000
-    for job_id in range(4287, 4290) :
+    for job_id in range(4287, 5324) :
         job_source[job_id] = get_job_by_id(job_id)
 
     resume_source = [{}] * 6000
-    for resume_id in range(4287, 4290) :
+    for resume_id in range(4287, 5324) :
         resume_source[resume_id] = get_resume_by_id(resume_id)
 
     with open('final_results.csv', 'w') as f :

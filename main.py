@@ -7,6 +7,8 @@ import ast
 import csv
 import os
 
+model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+
 def extraction(job):
     degrees_patterns_path = 'Resources/degrees.jsonl'
     majors_patterns_path = 'Resources/majors.jsonl'
@@ -32,7 +34,6 @@ def modifying_type_job(jobs):
     jobs["Skills"] = ast.literal_eval(jobs["Skills"])
     return jobs
 
-
 def get_job_by_id(job_id) :
     job = {}
     try :
@@ -40,7 +41,7 @@ def get_job_by_id(job_id) :
             job = json.load(f)
             job = extraction(job)
 
-            model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+            job['Skills'] = [ ', '.join( [ele for ele in job['Skills'] ] ) ]
             job['Skills'] = model.encode(job['Skills'])
 
     except FileNotFoundError as e:
@@ -56,7 +57,7 @@ def get_resume_by_id(resume_id) :
         with open('Data_Translated/resume/'+ str(resume_id) +'_translated.json', 'r') as f:
             resume = json.load(f)
 
-            model = SentenceTransformer("sentence-transformers/all-roberta-large-v1")
+            resume['skills'] = [ ', '.join( [ele for ele in resume['skills'] ] ) ]
             resume['skills'] = model.encode(resume['skills'])
 
     except FileNotFoundError as e:
@@ -97,19 +98,19 @@ if __name__ == '__main__':
     # load_dotenv()
 
     job_source = [{}] * 6000
-    for job_id in range(4287, 5324) :
+    for job_id in range(4287, 5323) :
         job_source[job_id] = get_job_by_id(job_id)
 
     resume_source = [{}] * 6000
-    for resume_id in range(4287, 5324) :
+    for resume_id in range(4287, 5323) :
         resume_source[resume_id] = get_resume_by_id(resume_id)
 
     with open('final_results.csv', 'w') as f :
         writer = csv.writer(f)
-        writer.writerow(['job_id', 'resume_id', 'skills_score', 'degrees_score', 'majors_score' 'overall_score'])
+        writer.writerow(['job_id', 'resume_id', 'skills_score', 'degrees_score', 'majors_score', 'overall_score'])
 
-        for job_id in range(4287, 5324) :
-            for resume_id in range(4287, 5324) :
+        for job_id in range(4287, 5323) :
+            for resume_id in range(4287, 5323) :
                 [skills_score, degrees_score, majors_score] = get_score_by_job_resume_id(job_id, resume_id) 
                 if [skills_score, degrees_score, majors_score] == [0, 0, 0] :
                     pass 

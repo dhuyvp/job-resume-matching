@@ -70,12 +70,11 @@ class Rules:
 
         # print('print job:',len(job), job)
         for i in range(len(job)) :
-            # if job[i] in resume : 
-            #     score += 1
-            # else :
-            # print([job[i]])
-            if (max( cosine_similarity( [job[i]], resume[:])[0] ) ) >= 0.4 :
-                score += (max( cosine_similarity( [job[i]], resume[:])[0] ) )
+            # if (max( cosine_similarity( [job[i]], resume[:])[0] ) ) >= 0.4 :
+            score += (max( cosine_similarity( [job[i]], resume[:])[0] ) )
+
+            # print(job[i])
+            # print(resume[:])
 
         score = score / len(job)
         return round(score, 10)
@@ -97,9 +96,9 @@ class Rules:
     def assign_degree_matching(match_scores) :
         score = 0
         if (len(match_scores) != 0) :
-            if (max(match_scores) >= 2) :
+            if (max(match_scores) >= 1) :
                 score = 1
-            elif (max(match_scores) >= 0) and (max(match_scores) < 2) :
+            elif (max(match_scores) >= 0) :
                 score = 0.5
         return score
     

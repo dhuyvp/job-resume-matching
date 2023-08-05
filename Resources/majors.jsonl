@@ -23,8 +23,8 @@
 {"label": "MAJOR|AI MAJOR|nlp", "pattern": [{"LOWER": "nlp"}]}
 {"label": "MAJOR|AI MAJOR|nlp-engineering", "pattern": [{"LOWER": "nlp"}, {"LOWER": "engineering"}]}
 {"label": "MAJOR|AI MAJOR|ai-engineering", "pattern": [{"LOWER": "ai"}, {"LOWER": "engineering"}]}
-{"label": "MAJOR|AI MAJOR|mathematics", "pattern": [{"LOWER": "mathematics"}]}
-{"label": "MAJOR|AI MAJOR|statistics", "pattern": [{"LOWER": "statistics"}]}
+{"label": "MAJOR|MATH MAJOR|mathematics", "pattern": [{"LOWER": "mathematics"}]}
+{"label": "MAJOR|MATH MAJOR|statistics", "pattern": [{"LOWER": "statistics"}]}
 {"label": "MAJOR|AI MAJOR|artificial-intelligence", "pattern": [{"LOWER": "ai"}]}
 {"label": "MAJOR|AI MAJOR|computer-vision", "pattern": [{"LOWER": "computer"}, {"LOWER": "vision"}]}
 {"label": "MAJOR|BUSINESS MAJOR|business-english", "pattern": [{"LOWER": "business"},{"LOWER": "english"}]}
@@ -32,192 +32,191 @@
 {"label": "MAJOR|DEV MAJOR|software-technology", "pattern": [{"LOWER": "software"},{"LOWER": "technology"}]}
 {"label": "MAJOR|DEV MAJOR|information-technology", "pattern": [{"LOWER": "information"},{"LOWER": "technology"}]}
 {"label": "MAJOR|DEV MAJOR|mechatronics", "pattern": [{"LOWER": "mechatronics"}]}
-{"label": "MAJOR|DEV MAJOR|international-economy", "pattern": [{"LOWER": "international"},{"LOWER": "economy"}]}
+{"label": "MAJOR|BUSINESS MAJOR|international-economy", "pattern": [{"LOWER": "international"},{"LOWER": "economy"}]}
 {"label": "MAJOR|DEV MAJOR|computer-engineering-technology", "pattern": [{"LOWER": "computer"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|service-science.", "pattern": [{"LOWER": "service"},{"LOWER": "science."}]}
+{"label": "MAJOR|BUSINESS MAJOR|service-science", "pattern": [{"LOWER": "service"},{"LOWER": "science"}]}
 {"label": "MAJOR|DEV MAJOR|game-2d-programming", "pattern": [{"LOWER": "game"},{"LOWER": "2d"},{"LOWER": "programming"}]}
-{"label": "MAJOR|DEV MAJOR|information", "pattern": [{"LOWER": "information"}]}
-{"label": "MAJOR|DEV MAJOR|information-system", "pattern": [{"LOWER": "information"},{"LOWER": "system"}]}
-{"label": "MAJOR|DEV MAJOR|information-manage", "pattern": [{"LOWER": "information"},{"LOWER": "manage"}]}
-{"label": "MAJOR|DEV MAJOR|urban-and-construction-management", "pattern": [{"LOWER": "urban"},{"LOWER": "and"},{"LOWER": "construction"},{"LOWER": "management"}]}
-{"label": "MAJOR|DEV MAJOR|khmer-pedagogy", "pattern": [{"LOWER": "khmer"},{"LOWER": "pedagogy"}]}
+{"label": "MAJOR|AI MAJOR|information", "pattern": [{"LOWER": "information"}]}
+{"label": "MAJOR|AI MAJOR|information-system", "pattern": [{"LOWER": "information"},{"LOWER": "system"}]}
+{"label": "MAJOR|AI MAJOR|information-manage", "pattern": [{"LOWER": "information"},{"LOWER": "manage"}]}
+{"label": "MAJOR|BUSINESS MAJOR|urban-and-construction-management", "pattern": [{"LOWER": "urban"},{"LOWER": "and"},{"LOWER": "construction"},{"LOWER": "management"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|khmer-pedagogy", "pattern": [{"LOWER": "khmer"},{"LOWER": "pedagogy"}]}
 {"label": "MAJOR|DEV MAJOR|environmental-technology", "pattern": [{"LOWER": "environmental"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|believe", "pattern": [{"LOWER": "believe"}]}
 {"label": "MAJOR|DEV MAJOR|computer-networks-and-data-communication", "pattern": [{"LOWER": "computer"},{"LOWER": "networks"},{"LOWER": "and"},{"LOWER": "data"},{"LOWER": "communication"}]}
 {"label": "MAJOR|DEV MAJOR|telecommunications", "pattern": [{"LOWER": "telecommunications"}]}
-{"label": "MAJOR|DEV MAJOR|orientalism", "pattern": [{"LOWER": "orientalism"}]}
-{"label": "MAJOR|DEV MAJOR|western-musical-instrument-performance", "pattern": [{"LOWER": "western"},{"LOWER": "musical"},{"LOWER": "instrument"},{"LOWER": "performance"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|orientalism", "pattern": [{"LOWER": "orientalism"}]}
+{"label": "MAJOR|MUSIC MAJOR|western-musical-instrument-performance", "pattern": [{"LOWER": "western"},{"LOWER": "musical"},{"LOWER": "instrument"},{"LOWER": "performance"}]}
 {"label": "MAJOR|DEV MAJOR|informatics", "pattern": [{"LOWER": "informatics"}]}
 {"label": "MAJOR|DEV MAJOR|engineering", "pattern": [{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|control-and-automation-engineering", "pattern": [{"LOWER": "control"},{"LOWER": "and"},{"LOWER": "automation"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|marketing", "pattern": [{"LOWER": "marketing"}]}
-{"label": "MAJOR|DEV MAJOR|commerce", "pattern": [{"LOWER": "commerce"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|control-and-automation-engineering", "pattern": [{"LOWER": "control"},{"LOWER": "and"},{"LOWER": "automation"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|BUSINESS MAJOR|marketing", "pattern": [{"LOWER": "marketing"}]}
+{"label": "MAJOR|BUSINESS MAJOR|commerce", "pattern": [{"LOWER": "commerce"}]}
 {"label": "MAJOR|DEV MAJOR|communication-technology", "pattern": [{"LOWER": "communication"},{"LOWER": "technology"}]}
 {"label": "MAJOR|DEV MAJOR|network-engineering", "pattern": [{"LOWER": "network"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|japanese-language-&-culture", "pattern": [{"LOWER": "japanese"},{"LOWER": "language"},{"LOWER": "&"},{"LOWER": "culture"}]}
-{"label": "MAJOR|DEV MAJOR|industrial-design", "pattern": [{"LOWER": "industrial"},{"LOWER": "design"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|japanese-language-&-culture", "pattern": [{"LOWER": "japanese"},{"LOWER": "language"},{"LOWER": "&"},{"LOWER": "culture"}]}
+{"label": "MAJOR|DESIGN MAJOR|industrial-design", "pattern": [{"LOWER": "industrial"},{"LOWER": "design"}]}
 {"label": "MAJOR|DEV MAJOR|it-engineer", "pattern": [{"LOWER": "it"},{"LOWER": "engineer"}]}
 {"label": "MAJOR|DEV MAJOR|software-engineer", "pattern": [{"LOWER": "software"},{"LOWER": "engineer"}]}
-{"label": "MAJOR|DEV MAJOR|maths", "pattern": [{"LOWER": "maths"}]}
-{"label": "MAJOR|DEV MAJOR|applied-mathematics", "pattern": [{"LOWER": "applied"},{"LOWER": "mathematics"}]}
+{"label": "MAJOR|MATH MAJOR|maths", "pattern": [{"LOWER": "maths"}]}
+{"label": "MAJOR|MATH MAJOR|applied-mathematics", "pattern": [{"LOWER": "applied"},{"LOWER": "mathematics"}]}
 {"label": "MAJOR|DEV MAJOR|informatics-pedagogy", "pattern": [{"LOWER": "informatics"},{"LOWER": "pedagogy"}]}
-{"label": "MAJOR|DEV MAJOR|safety-information", "pattern": [{"LOWER": "safety"},{"LOWER": "information"}]}
-{"label": "MAJOR|DEV MAJOR|business-administration", "pattern": [{"LOWER": "business"},{"LOWER": "administration"}]}
+{"label": "MAJOR|AI MAJOR|safety-information", "pattern": [{"LOWER": "safety"},{"LOWER": "information"}]}
+{"label": "MAJOR|BUSINESS MAJOR|business-administration", "pattern": [{"LOWER": "business"},{"LOWER": "administration"}]}
 {"label": "MAJOR|DEV MAJOR|program", "pattern": [{"LOWER": "program"}]}
-{"label": "MAJOR|DEV MAJOR|tourism", "pattern": [{"LOWER": "tourism"}]}
+{"label": "MAJOR|TOURISM MAJOR|tourism", "pattern": [{"LOWER": "tourism"}]}
 {"label": "MAJOR|DEV MAJOR|.net-software-developer", "pattern": [{"LOWER": ".net"},{"LOWER": "software"},{"LOWER": "developer"}]}
-{"label": "MAJOR|DEV MAJOR|petroleum-technology-and-oil-extraction", "pattern": [{"LOWER": "petroleum"},{"LOWER": "technology"},{"LOWER": "and"},{"LOWER": "oil"},{"LOWER": "extraction"}]}
-{"label": "MAJOR|DEV MAJOR|health-organization-and-management", "pattern": [{"LOWER": "health"},{"LOWER": "organization"},{"LOWER": "and"},{"LOWER": "management"}]}
-{"label": "MAJOR|DEV MAJOR|graphic-design", "pattern": [{"LOWER": "graphic"},{"LOWER": "design"}]}
-{"label": "MAJOR|DEV MAJOR|network-management.", "pattern": [{"LOWER": "network"},{"LOWER": "management."}]}
+{"label": "MAJOR|CHEMISTRY MAJOR|petroleum-technology-and-oil-extraction", "pattern": [{"LOWER": "petroleum"},{"LOWER": "technology"},{"LOWER": "and"},{"LOWER": "oil"},{"LOWER": "extraction"}]}
+{"label": "MAJOR|DOCTOR MAJOR|health-organization-and-management", "pattern": [{"LOWER": "health"},{"LOWER": "organization"},{"LOWER": "and"},{"LOWER": "management"}]}
+{"label": "MAJOR|DESIGN MAJOR|graphic-design", "pattern": [{"LOWER": "graphic"},{"LOWER": "design"}]}
+{"label": "MAJOR|DEV MAJOR|network-management", "pattern": [{"LOWER": "network"},{"LOWER": "management"}]}
 {"label": "MAJOR|DEV MAJOR|management-information-systems", "pattern": [{"LOWER": "management"},{"LOWER": "information"},{"LOWER": "systems"}]}
-{"label": "MAJOR|DEV MAJOR|industrial-economy", "pattern": [{"LOWER": "industrial"},{"LOWER": "economy"}]}
+{"label": "MAJOR|BUSINESS MAJOR|industrial-economy", "pattern": [{"LOWER": "industrial"},{"LOWER": "economy"}]}
 {"label": "MAJOR|DEV MAJOR|system-management-and-advance-software", "pattern": [{"LOWER": "system"},{"LOWER": "management"},{"LOWER": "and"},{"LOWER": "advance"},{"LOWER": "software"}]}
 {"label": "MAJOR|DEV MAJOR|web-development-and-management", "pattern": [{"LOWER": "web"},{"LOWER": "development"},{"LOWER": "and"},{"LOWER": "management"}]}
-{"label": "MAJOR|DEV MAJOR|constitutional-law-and-administrative-law", "pattern": [{"LOWER": "constitutional"},{"LOWER": "law"},{"LOWER": "and"},{"LOWER": "administrative"},{"LOWER": "law"}]}
+{"label": "MAJOR|LAW MAJOR|constitutional-law-and-administrative-law", "pattern": [{"LOWER": "constitutional"},{"LOWER": "law"},{"LOWER": "and"},{"LOWER": "administrative"},{"LOWER": "law"}]}
 {"label": "MAJOR|DEV MAJOR|software", "pattern": [{"LOWER": "software"}]}
 {"label": "MAJOR|DEV MAJOR|java-web", "pattern": [{"LOWER": "java"},{"LOWER": "web"}]}
-{"label": "MAJOR|DEV MAJOR|engineering-technology-of-building-materials", "pattern": [{"LOWER": "engineering"},{"LOWER": "technology"},{"LOWER": "of"},{"LOWER": "building"},{"LOWER": "materials"}]}
-{"label": "MAJOR|DEV MAJOR|chinese-pedagogy", "pattern": [{"LOWER": "chinese"},{"LOWER": "pedagogy"}]}
-{"label": "MAJOR|DEV MAJOR|professional-training---it-network", "pattern": [{"LOWER": "professional"},{"LOWER": "training"},{"LOWER": "-"},{"LOWER": "it"},{"LOWER": "network"}]}
-{"label": "MAJOR|DEV MAJOR|marine-engineering-construction", "pattern": [{"LOWER": "marine"},{"LOWER": "engineering"},{"LOWER": "construction"}]}
-{"label": "MAJOR|DEV MAJOR|accountant", "pattern": [{"LOWER": "accountant"}]}
-{"label": "MAJOR|DEV MAJOR|quantitative-and-computational-finance", "pattern": [{"LOWER": "quantitative"},{"LOWER": "and"},{"LOWER": "computational"},{"LOWER": "finance"}]}
-{"label": "MAJOR|DEV MAJOR|traditional-medicine", "pattern": [{"LOWER": "traditional"},{"LOWER": "medicine"}]}
-{"label": "MAJOR|DEV MAJOR|ogy", "pattern": [{"LOWER": "ogy"}]}
-{"label": "MAJOR|DEV MAJOR|electronics-and-telecommunications-engineering", "pattern": [{"LOWER": "electronics"},{"LOWER": "and"},{"LOWER": "telecommunications"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|mechanical-engineering-technology", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|seafood-processing-technology", "pattern": [{"LOWER": "seafood"},{"LOWER": "processing"},{"LOWER": "technology"}]}
+{"label": "MAJOR|CONSTRUCTION MAJOR|engineering-technology-of-building-materials", "pattern": [{"LOWER": "engineering"},{"LOWER": "technology"},{"LOWER": "of"},{"LOWER": "building"},{"LOWER": "materials"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|chinese-pedagogy", "pattern": [{"LOWER": "chinese"},{"LOWER": "pedagogy"}]}
+{"label": "MAJOR|AI MAJOR|professional-training-it-network", "pattern": [{"LOWER": "professional"},{"LOWER": "training"},{"LOWER": "it"},{"LOWER": "network"}]}
+{"label": "MAJOR|CONSTRUCTION MAJOR|marine-engineering-construction", "pattern": [{"LOWER": "marine"},{"LOWER": "engineering"},{"LOWER": "construction"}]}
+{"label": "MAJOR|BUSINESS MAJOR|accountant", "pattern": [{"LOWER": "accountant"}]}
+{"label": "MAJOR|BUSINESS MAJOR|quantitative-and-computational-finance", "pattern": [{"LOWER": "quantitative"},{"LOWER": "and"},{"LOWER": "computational"},{"LOWER": "finance"}]}
+{"label": "MAJOR|DOCTOR MAJOR|traditional-medicine", "pattern": [{"LOWER": "traditional"},{"LOWER": "medicine"}]}
+{"label": "MAJOR|BUSINESS MAJOR|ogy", "pattern": [{"LOWER": "ogy"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|electronics-and-telecommunications-engineering", "pattern": [{"LOWER": "electronics"},{"LOWER": "and"},{"LOWER": "telecommunications"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|mechanical-engineering-technology", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
+{"label": "MAJOR|FOOD MAJOR|seafood-processing-technology", "pattern": [{"LOWER": "seafood"},{"LOWER": "processing"},{"LOWER": "technology"}]}
 {"label": "MAJOR|DEV MAJOR|programming", "pattern": [{"LOWER": "programming"}]}
-{"label": "MAJOR|DEV MAJOR|e-commerce-and-marketing", "pattern": [{"LOWER": "e-commerce"},{"LOWER": "and"},{"LOWER": "marketing"}]}
-{"label": "MAJOR|BUSINESS MAJOR|chinese", "pattern": [{"LOWER": "chinese"}]}
-{"label": "MAJOR|BUSINESS MAJOR|student-view", "pattern": [{"LOWER": "student"},{"LOWER": "view"}]}
+{"label": "MAJOR|BUSINESS MAJOR|e-commerce-and-marketing", "pattern": [{"LOWER": "e-commerce"},{"LOWER": "and"},{"LOWER": "marketing"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|chinese", "pattern": [{"LOWER": "chinese"}]}
+{"label": "MAJOR|AI MAJOR|student-view", "pattern": [{"LOWER": "student"},{"LOWER": "view"}]}
 {"label": "MAJOR|BUSINESS MAJOR|financial-planning", "pattern": [{"LOWER": "financial"},{"LOWER": "planning"}]}
-{"label": "MAJOR|DEV MAJOR|film-and-television-technology", "pattern": [{"LOWER": "film"},{"LOWER": "and"},{"LOWER": "television"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|biotechnology", "pattern": [{"LOWER": "biotechnology"}]}
-{"label": "MAJOR|DEV MAJOR|computing", "pattern": [{"LOWER": "computing"}]}
-{"label": "MAJOR|DEV MAJOR|economy", "pattern": [{"LOWER": "economy"}]}
-{"label": "MAJOR|DEV MAJOR|economic-investment", "pattern": [{"LOWER": "economic"},{"LOWER": "investment"}]}
-{"label": "MAJOR|DEV MAJOR|computer-engineering", "pattern": [{"LOWER": "computer"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|preserving-urban-architectural-heritage", "pattern": [{"LOWER": "preserving"},{"LOWER": "urban"},{"LOWER": "architectural"},{"LOWER": "heritage"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|film-and-television-technology", "pattern": [{"LOWER": "film"},{"LOWER": "and"},{"LOWER": "television"},{"LOWER": "technology"}]}
+{"label": "MAJOR|AI MAJOR|biotechnology", "pattern": [{"LOWER": "biotechnology"}]}
+{"label": "MAJOR|MATH MAJOR|computing", "pattern": [{"LOWER": "computing"}]}
+{"label": "MAJOR|BUSINESS MAJOR|economy", "pattern": [{"LOWER": "economy"}]}
+{"label": "MAJOR|BUSENESS MAJOR|economic-investment", "pattern": [{"LOWER": "economic"},{"LOWER": "investment"}]}
+{"label": "MAJOR|AI MAJOR|computer-engineering", "pattern": [{"LOWER": "computer"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|HISTORY MAJOR|preserving-urban-architectural-heritage", "pattern": [{"LOWER": "preserving"},{"LOWER": "urban"},{"LOWER": "architectural"},{"LOWER": "heritage"}]}
 {"label": "MAJOR|DEV MAJOR|java-software-programming", "pattern": [{"LOWER": "java"},{"LOWER": "software"},{"LOWER": "programming"}]}
 {"label": "MAJOR|DEV MAJOR|php", "pattern": [{"LOWER": "php"}]}
 {"label": "MAJOR|AI MAJOR|embedded-programming", "pattern": [{"LOWER": "embedded"},{"LOWER": "programming"}]}
 {"label": "MAJOR|DEV MAJOR|web-application-development", "pattern": [{"LOWER": "web"},{"LOWER": "application"},{"LOWER": "development"}]}
 {"label": "MAJOR|DEV MAJOR|computer", "pattern": [{"LOWER": "computer"}]}
-{"label": "MAJOR|DEV MAJOR|agricultural-economy", "pattern": [{"LOWER": "agricultural"},{"LOWER": "economy"}]}
+{"label": "MAJOR|BUSINESS MAJOR|agricultural-economy", "pattern": [{"LOWER": "agricultural"},{"LOWER": "economy"}]}
 {"label": "MAJOR|DEV MAJOR|computer-programmer", "pattern": [{"LOWER": "computer"},{"LOWER": "programmer"}]}
 {"label": "MAJOR|DEV MAJOR|android-developer", "pattern": [{"LOWER": "android"},{"LOWER": "developer"}]}
 {"label": "MAJOR|DEV MAJOR|.net-developer", "pattern": [{"LOWER": ".net"},{"LOWER": "developer"}]}
 {"label": "MAJOR|CHEMISTRY MAJOR|chemistry", "pattern": [{"LOWER": "chemistry"}]}
-{"label": "MAJOR|DEV MAJOR|banking-and-finance", "pattern": [{"LOWER": "banking"},{"LOWER": "and"},{"LOWER": "finance"}]}
-{"label": "MAJOR|DEV MAJOR|management-of-travel-and-tourism-services", "pattern": [{"LOWER": "management"},{"LOWER": "of"},{"LOWER": "travel"},{"LOWER": "and"},{"LOWER": "tourism"},{"LOWER": "services"}]}
-{"label": "MAJOR|DEV MAJOR|administrator", "pattern": [{"LOWER": "administrator"}]}
-{"label": "MAJOR|DEV MAJOR|traffic-engineering-technology", "pattern": [{"LOWER": "traffic"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|mechanical-engineering", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|BUSINESS MAJOR|banking-and-finance", "pattern": [{"LOWER": "banking"},{"LOWER": "and"},{"LOWER": "finance"}]}
+{"label": "MAJOR|TOURISM MAJOR|management-of-travel-and-tourism-services", "pattern": [{"LOWER": "management"},{"LOWER": "of"},{"LOWER": "travel"},{"LOWER": "and"},{"LOWER": "tourism"},{"LOWER": "services"}]}
+{"label": "MAJOR|AI MAJOR|administrator", "pattern": [{"LOWER": "administrator"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|traffic-engineering-technology", "pattern": [{"LOWER": "traffic"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|mechanical-engineering", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineering"}]}
 {"label": "MAJOR|DEV MAJOR|networking", "pattern": [{"LOWER": "networking"}]}
-{"label": "MAJOR|DEV MAJOR|math", "pattern": [{"LOWER": "math"}]}
-{"label": "MAJOR|DEV MAJOR|engineer", "pattern": [{"LOWER": "engineer"}]}
-{"label": "MAJOR|DEV MAJOR|managing-human-resource", "pattern": [{"LOWER": "managing"},{"LOWER": "human"},{"LOWER": "resource"}]}
-{"label": "MAJOR|DEV MAJOR|vietnamese-language-and-vietnamese-culture", "pattern": [{"LOWER": "vietnamese"},{"LOWER": "language"},{"LOWER": "and"},{"LOWER": "vietnamese"},{"LOWER": "culture"}]}
-{"label": "MAJOR|DEV MAJOR|management-science", "pattern": [{"LOWER": "management"},{"LOWER": "science"}]}
-{"label": "MAJOR|DEV MAJOR|mathematics-with-management-and-finance", "pattern": [{"LOWER": "mathematics"},{"LOWER": "with"},{"LOWER": "management"},{"LOWER": "and"},{"LOWER": "finance"}]}
-{"label": "MAJOR|DEV MAJOR|school-of-education", "pattern": [{"LOWER": "school"},{"LOWER": "of"},{"LOWER": "education"}]}
+{"label": "MAJOR|MATH MAJOR|math", "pattern": [{"LOWER": "math"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|engineer", "pattern": [{"LOWER": "engineer"}]}
+{"label": "MAJOR|BUSINESS MAJOR|managing-human-resource", "pattern": [{"LOWER": "managing"},{"LOWER": "human"},{"LOWER": "resource"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|vietnamese-language-and-vietnamese-culture", "pattern": [{"LOWER": "vietnamese"},{"LOWER": "language"},{"LOWER": "and"},{"LOWER": "vietnamese"},{"LOWER": "culture"}]}
+{"label": "MAJOR|BUSINESS MAJOR|management-science", "pattern": [{"LOWER": "management"},{"LOWER": "science"}]}
+{"label": "MAJOR|MATH MAJOR|mathematics-with-management-and-finance", "pattern": [{"LOWER": "mathematics"},{"LOWER": "with"},{"LOWER": "management"},{"LOWER": "and"},{"LOWER": "finance"}]}
+{"label": "MAJOR|EDUCATION MAJOR|school-of-education", "pattern": [{"LOWER": "school"},{"LOWER": "of"},{"LOWER": "education"}]}
 {"label": "MAJOR|DEV MAJOR|software-development", "pattern": [{"LOWER": "software"},{"LOWER": "development"}]}
-{"label": "MAJOR|BUSINESS MAJOR|literature", "pattern": [{"LOWER": "literature"}]}
-{"label": "MAJOR|BUSINESS MAJOR|education-management", "pattern": [{"LOWER": "education"},{"LOWER": "management"}]}
-{"label": "MAJOR|BUSINESS MAJOR|study-of-language", "pattern": [{"LOWER": "study"},{"LOWER": "of"},{"LOWER": "language"}]}
+{"label": "MAJOR|EDUCATION MAJOR|literature", "pattern": [{"LOWER": "literature"}]}
+{"label": "MAJOR|EDUCATION MAJOR|education-management", "pattern": [{"LOWER": "education"},{"LOWER": "management"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|study-of-language", "pattern": [{"LOWER": "study"},{"LOWER": "of"},{"LOWER": "language"}]}
 {"label": "MAJOR|DEV MAJOR|programmer", "pattern": [{"LOWER": "programmer"}]}
-{"label": "MAJOR|BUSINESS MAJOR|english-language", "pattern": [{"LOWER": "english"},{"LOWER": "language"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|english-language", "pattern": [{"LOWER": "english"},{"LOWER": "language"}]}
 {"label": "MAJOR|BUSINESS MAJOR|business-laws", "pattern": [{"LOWER": "business"},{"LOWER": "laws"}]}
-{"label": "MAJOR|DEV MAJOR|science-socialism", "pattern": [{"LOWER": "science"},{"LOWER": "socialism"}]}
-{"label": "MAJOR|DEV MAJOR|the-law", "pattern": [{"LOWER": "the"},{"LOWER": "law"}]}
-{"label": "MAJOR|DEV MAJOR|economic-law", "pattern": [{"LOWER": "economic"},{"LOWER": "law"}]}
-{"label": "MAJOR|DEV MAJOR|planning-&-investment", "pattern": [{"LOWER": "planning"},{"LOWER": "&"},{"LOWER": "investment"}]}
+{"label": "MAJOR|EDUCATION MAJOR|science-socialism", "pattern": [{"LOWER": "science"},{"LOWER": "socialism"}]}
+{"label": "MAJOR|LAW MAJOR|the-law", "pattern": [{"LOWER": "the"},{"LOWER": "law"}]}
+{"label": "MAJOR|BUSINESS MAJOR|economic-law", "pattern": [{"LOWER": "economic"},{"LOWER": "law"}]}
+{"label": "MAJOR|BUSINESS MAJOR|planning-&-investment", "pattern": [{"LOWER": "planning"},{"LOWER": "&"},{"LOWER": "investment"}]}
 {"label": "MAJOR|DEV MAJOR|engineering", "pattern": [{"LOWER": "engineering"}]}
 {"label": "MAJOR|DEV MAJOR|software-engineer.", "pattern": [{"LOWER": "software"},{"LOWER": "engineer."}]}
-{"label": "MAJOR|DEV MAJOR|hotel-management", "pattern": [{"LOWER": "hotel"},{"LOWER": "management"}]}
-{"label": "MAJOR|DEV MAJOR|global-e-business", "pattern": [{"LOWER": "global"},{"LOWER": "e"},{"LOWER": "business"}]}
+{"label": "MAJOR|BUSINESS MAJOR|hotel-management", "pattern": [{"LOWER": "hotel"},{"LOWER": "management"}]}
+{"label": "MAJOR|BUSINESS MAJOR|global-e-business", "pattern": [{"LOWER": "global"},{"LOWER": "e"},{"LOWER": "business"}]}
 {"label": "MAJOR|DEV MAJOR|computer-network", "pattern": [{"LOWER": "computer"},{"LOWER": "network"}]}
-{"label": "MAJOR|DEV MAJOR|professional", "pattern": [{"LOWER": "professional"}]}
-{"label": "MAJOR|DEV MAJOR|graphic-design,-intermedia/multimedia", "pattern": [{"LOWER": "graphic"},{"LOWER": "design,"},{"LOWER": "intermedia/multimedia"}]}
-{"label": "MAJOR|DEV MAJOR|secondary-school", "pattern": [{"LOWER": "secondary"},{"LOWER": "school"}]}
+{"label": "MAJOR|AI MAJOR|professional", "pattern": [{"LOWER": "professional"}]}
+{"label": "MAJOR|DESIGN MAJOR|graphic-design-intermedia/multimedia", "pattern": [{"LOWER": "graphic"},{"LOWER": "design"},{"LOWER": "intermedia/multimedia"}]}
+{"label": "MAJOR|EDUCATION MAJOR|secondary-school", "pattern": [{"LOWER": "secondary"},{"LOWER": "school"}]}
 {"label": "MAJOR|LAW MAJOR|law-on-finance-banking-security", "pattern": [{"LOWER": "law"},{"LOWER": "on"},{"LOWER": "finance"},{"LOWER": "banking"},{"LOWER": "security"}]}
-{"label": "MAJOR|DEV MAJOR|modern-finance-and-banking", "pattern": [{"LOWER": "modern"},{"LOWER": "finance"},{"LOWER": "and"},{"LOWER": "banking"}]}
-{"label": "MAJOR|DEV MAJOR|business-analyst", "pattern": [{"LOWER": "business"},{"LOWER": "analyst"}]}
-{"label": "MAJOR|DEV MAJOR|law", "pattern": [{"LOWER": "law"}]}
-{"label": "MAJOR|BUSINESS MAJOR|multimedia", "pattern": [{"LOWER": "multimedia"}]}
-{"label": "MAJOR|AI MAJOR|external-trade", "pattern": [{"LOWER": "external"},{"LOWER": "trade"}]}
-{"label": "MAJOR|DEV MAJOR|atomic-and-nuclear-physics", "pattern": [{"LOWER": "atomic"},{"LOWER": "and"},{"LOWER": "nuclear"},{"LOWER": "physics"}]}
-{"label": "MAJOR|DEV MAJOR|russian-pedagogy", "pattern": [{"LOWER": "russian"},{"LOWER": "pedagogy"}]}
-{"label": "MAJOR|DEV MAJOR|english-pedagogy", "pattern": [{"LOWER": "english"},{"LOWER": "pedagogy"}]}
+{"label": "MAJOR|BUSINESS MAJOR|modern-finance-and-banking", "pattern": [{"LOWER": "modern"},{"LOWER": "finance"},{"LOWER": "and"},{"LOWER": "banking"}]}
+{"label": "MAJOR|BUSINESS MAJOR|business-analyst", "pattern": [{"LOWER": "business"},{"LOWER": "analyst"}]}
+{"label": "MAJOR|LAW MAJOR|law", "pattern": [{"LOWER": "law"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|multimedia", "pattern": [{"LOWER": "multimedia"}]}
+{"label": "MAJOR|BUSINESS MAJOR|external-trade", "pattern": [{"LOWER": "external"},{"LOWER": "trade"}]}
+{"label": "MAJOR|PHYSICS MAJOR|atomic-and-nuclear-physics", "pattern": [{"LOWER": "atomic"},{"LOWER": "and"},{"LOWER": "nuclear"},{"LOWER": "physics"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|russian-pedagogy", "pattern": [{"LOWER": "russian"},{"LOWER": "pedagogy"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|english-pedagogy", "pattern": [{"LOWER": "english"},{"LOWER": "pedagogy"}]}
 {"label": "MAJOR|DEV MAJOR|software-technology-engineer", "pattern": [{"LOWER": "software"},{"LOWER": "technology"},{"LOWER": "engineer"}]}
 {"label": "MAJOR|LAW MAJOR|laws", "pattern": [{"LOWER": "laws"}]}
 {"label": "MAJOR|DOCTOR MAJOR|hospitality", "pattern": [{"LOWER": "hospitality"}]}
-{"label": "MAJOR|DEV MAJOR|electronic-and-telecommunications-engineering-technology", "pattern": [{"LOWER": "electronic"},{"LOWER": "and"},{"LOWER": "telecommunications"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|electrical-technology,-electrical/electronics-maintenance-and-repair-technology", "pattern": [{"LOWER": "electrical"},{"LOWER": "technology,"},{"LOWER": "electrical/electronics"},{"LOWER": "maintenance"},{"LOWER": "and"},{"LOWER": "repair"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|english", "pattern": [{"LOWER": "english"}]}
-{"label": "MAJOR|DEV MAJOR|electrical-engineering", "pattern": [{"LOWER": "electrical"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|import-export", "pattern": [{"LOWER": "import"},{"LOWER": "export"}]}
-{"label": "MAJOR|DEV MAJOR|administration", "pattern": [{"LOWER": "administration"}]}
-{"label": "MAJOR|DEV MAJOR|application-programming.", "pattern": [{"LOWER": "application"},{"LOWER": "programming."}]}
-{"label": "MAJOR|BUSINESS MAJOR|telecommunications.", "pattern": [{"LOWER": "telecommunications."}]}
-{"label": "MAJOR|DEV MAJOR|engineering", "pattern": [{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|economic-development", "pattern": [{"LOWER": "economic"},{"LOWER": "development"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|electronic-and-telecommunications-engineering-technology", "pattern": [{"LOWER": "electronic"},{"LOWER": "and"},{"LOWER": "telecommunications"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|electrical-technology,-electrical/electronics-maintenance-and-repair-technology", "pattern": [{"LOWER": "electrical"},{"LOWER": "technology,"},{"LOWER": "electrical/electronics"},{"LOWER": "maintenance"},{"LOWER": "and"},{"LOWER": "repair"},{"LOWER": "technology"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|english", "pattern": [{"LOWER": "english"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|electrical-engineering", "pattern": [{"LOWER": "electrical"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|BUSINESS MAJOR|import-export", "pattern": [{"LOWER": "import"},{"LOWER": "export"}]}
+{"label": "MAJOR|BUSINESS MAJOR|administration", "pattern": [{"LOWER": "administration"}]}
+{"label": "MAJOR|DEV MAJOR|application-programming", "pattern": [{"LOWER": "application"},{"LOWER": "programming"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|telecommunications.", "pattern": [{"LOWER": "telecommunications."}]}
+{"label": "MAJOR|PHYSICS MAJOR|engineering", "pattern": [{"LOWER": "engineering"}]}
+{"label": "MAJOR|BUSINESS MAJOR|economic-development", "pattern": [{"LOWER": "economic"},{"LOWER": "development"}]}
 {"label": "MAJOR|DEV MAJOR|industrial-systems-engineering", "pattern": [{"LOWER": "industrial"},{"LOWER": "systems"},{"LOWER": "engineering"}]}
-{"label": "MAJOR|DEV MAJOR|data-science", "pattern": [{"LOWER": "data"},{"LOWER": "science"}]}
-{"label": "MAJOR|DEV MAJOR|comp.", "pattern": [{"LOWER": "comp."}]}
-{"label": "MAJOR|DEV MAJOR|public-relations", "pattern": [{"LOWER": "public"},{"LOWER": "relations"}]}
-{"label": "MAJOR|DEV MAJOR|mechanical-engineer", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineer"}]}
-{"label": "MAJOR|DEV MAJOR|mechanics", "pattern": [{"LOWER": "mechanics"}]}
+{"label": "MAJOR|AI MAJOR|data-science", "pattern": [{"LOWER": "data"},{"LOWER": "science"}]}
+{"label": "MAJOR|DEV MAJOR|comp", "pattern": [{"LOWER": "comp"}]}
+{"label": "MAJOR|EDUCATION MAJOR|public-relations", "pattern": [{"LOWER": "public"},{"LOWER": "relations"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|mechanical-engineer", "pattern": [{"LOWER": "mechanical"},{"LOWER": "engineer"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|mechanics", "pattern": [{"LOWER": "mechanics"}]}
 {"label": "MAJOR|DEV MAJOR|network", "pattern": [{"LOWER": "network"}]}
 {"label": "MAJOR|BUSINESS MAJOR|international-relationship", "pattern": [{"LOWER": "international"},{"LOWER": "relationship"}]}
 {"label": "MAJOR|BUSINESS MAJOR|land-management", "pattern": [{"LOWER": "land"},{"LOWER": "management"}]}
 {"label": "MAJOR|DEV MAJOR|science", "pattern": [{"LOWER": "science"}]}
-{"label": "MAJOR|DEV MAJOR|international-law", "pattern": [{"LOWER": "international"},{"LOWER": "law"}]}
-{"label": "MAJOR|DEV MAJOR|mba", "pattern": [{"LOWER": "mba"}]}
-{"label": "MAJOR|DEV MAJOR|applied-data-analytics", "pattern": [{"LOWER": "applied"},{"LOWER": "data"},{"LOWER": "analytics"}]}
-{"label": "MAJOR|DEV MAJOR|investment-analysis", "pattern": [{"LOWER": "investment"},{"LOWER": "analysis"}]}
+{"label": "MAJOR|LAW MAJOR|international-law", "pattern": [{"LOWER": "international"},{"LOWER": "law"}]}
+{"label": "MAJOR|BUSINESS MAJOR|mba", "pattern": [{"LOWER": "mba"}]}
+{"label": "MAJOR|AI MAJOR|applied-data-analytics", "pattern": [{"LOWER": "applied"},{"LOWER": "data"},{"LOWER": "analytics"}]}
+{"label": "MAJOR|BUSINESS MAJOR|investment-analysis", "pattern": [{"LOWER": "investment"},{"LOWER": "analysis"}]}
 {"label": "MAJOR|BUSINESS MAJOR|project-management", "pattern": [{"LOWER": "project"},{"LOWER": "management"}]}
 {"label": "MAJOR|DEV MAJOR|technology-engineer", "pattern": [{"LOWER": "technology"},{"LOWER": "engineer"}]}
-{"label": "MAJOR|DEV MAJOR|english-with-reflex-method", "pattern": [{"LOWER": "english"},{"LOWER": "with"},{"LOWER": "reflex"},{"LOWER": "method"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|english-with-reflex-method", "pattern": [{"LOWER": "english"},{"LOWER": "with"},{"LOWER": "reflex"},{"LOWER": "method"}]}
 {"label": "MAJOR|BUSINESS MAJOR|international-bussiness", "pattern": [{"LOWER": "international"},{"LOWER": "bussiness"}]}
 {"label": "MAJOR|DEV MAJOR|bis", "pattern": [{"LOWER": "bis"}]}
-{"label": "MAJOR|BUSINESS MAJOR|asian-studies", "pattern": [{"LOWER": "asian"},{"LOWER": "studies"}]}
+{"label": "MAJOR|EDUCATION MAJOR|asian-studies", "pattern": [{"LOWER": "asian"},{"LOWER": "studies"}]}
 {"label": "MAJOR|BUSINESS MAJOR|natural-resource-economics", "pattern": [{"LOWER": "natural"},{"LOWER": "resource"},{"LOWER": "economics"}]}
-{"label": "MAJOR|BUSINESS MAJOR|german-language", "pattern": [{"LOWER": "german"},{"LOWER": "language"}]}
-{"label": "MAJOR|BUSINESS MAJOR|italian-language", "pattern": [{"LOWER": "italian"},{"LOWER": "language"}]}
-{"label": "MAJOR|BUSINESS MAJOR|academic-english", "pattern": [{"LOWER": "academic"},{"LOWER": "english"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|german-language", "pattern": [{"LOWER": "german"},{"LOWER": "language"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|italian-language", "pattern": [{"LOWER": "italian"},{"LOWER": "language"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|academic-english", "pattern": [{"LOWER": "academic"},{"LOWER": "english"}]}
 {"label": "MAJOR|BUSINESS MAJOR|cultural-management", "pattern": [{"LOWER": "cultural"},{"LOWER": "management"}]}
-{"label": "MAJOR|BUSINESS MAJOR|japanese", "pattern": [{"LOWER": "japanese"}]}
+{"label": "MAJOR|LANGUAGE MAJOR|japanese", "pattern": [{"LOWER": "japanese"}]}
 {"label": "MAJOR|DEV MAJOR|computers", "pattern": [{"LOWER": "computers"}]}
 {"label": "MAJOR|BUSINESS MAJOR|logistics-and-supply-chain-management", "pattern": [{"LOWER": "logistics"},{"LOWER": "and"},{"LOWER": "supply"},{"LOWER": "chain"},{"LOWER": "management"}]}
 {"label": "MAJOR|GEOGRAPHY MAJOR|geography", "pattern": [{"LOWER": "geography"}]}
 {"label": "MAJOR|BUSINESS MAJOR|brand-&-marketing-strategy", "pattern": [{"LOWER": "brand"},{"LOWER": "&"},{"LOWER": "marketing"},{"LOWER": "strategy"}]}
 {"label": "MAJOR|BUSINESS MAJOR|fisheries-management", "pattern": [{"LOWER": "fisheries"},{"LOWER": "management"}]}
-{"label": "MAJOR|BUSINESS MAJOR|tour-guide", "pattern": [{"LOWER": "tour"},{"LOWER": "guide"}]}
-{"label": "MAJOR|DEV MAJOR|construction-engineering-of-water-works", "pattern": [{"LOWER": "construction"},{"LOWER": "engineering"},{"LOWER": "of"},{"LOWER": "water"},{"LOWER": "works"}]}
+{"label": "MAJOR|TOURISM MAJOR|tour-guide", "pattern": [{"LOWER": "tour"},{"LOWER": "guide"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|construction-engineering-of-water-works", "pattern": [{"LOWER": "construction"},{"LOWER": "engineering"},{"LOWER": "of"},{"LOWER": "water"},{"LOWER": "works"}]}
 {"label": "MAJOR|CHEMISTRY MAJOR|chemical", "pattern": [{"LOWER": "chemical"}]}
-{"label": "MAJOR|DEV MAJOR|construction-engineering-technology", "pattern": [{"LOWER": "construction"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
-{"label": "MAJOR|DEV MAJOR|technology-pedagogy", "pattern": [{"LOWER": "technology"},{"LOWER": "pedagogy"}]}
-{"label": "MAJOR|DEV MAJOR|engineering-of-physics", "pattern": [{"LOWER": "engineering"},{"LOWER": "of"},{"LOWER": "physics"}]}
-{"label": "MAJOR|DEV MAJOR|knowledge-engineering", "pattern": [{"LOWER": "knowledge"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|construction-engineering-technology", "pattern": [{"LOWER": "construction"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
+{"label": "MAJOR|EDUCATION MAJOR|technology-pedagogy", "pattern": [{"LOWER": "technology"},{"LOWER": "pedagogy"}]}
+{"label": "MAJOR|PHYSICS MAJOR|engineering-of-physics", "pattern": [{"LOWER": "engineering"},{"LOWER": "of"},{"LOWER": "physics"}]}
+{"label": "MAJOR|EDUCATION MAJOR|knowledge-engineering", "pattern": [{"LOWER": "knowledge"},{"LOWER": "engineering"}]}
 {"label": "MAJOR|DEV MAJOR|real-estate", "pattern": [{"LOWER": "real"},{"LOWER": "estate"}]}
-{"label": "MAJOR|BUSINESS MAJOR|multimedia-communications", "pattern": [{"LOWER": "multimedia"},{"LOWER": "communications"}]}
+{"label": "MAJOR|TELECOMMUNICATION MAJOR|multimedia-communications", "pattern": [{"LOWER": "multimedia"},{"LOWER": "communications"}]}
 {"label": "MAJOR|DEV MAJOR|software-engineerminor:-web-developer,-android-developer", "pattern": [{"LOWER": "software"},{"LOWER": "engineerminor:"},{"LOWER": "web"},{"LOWER": "developer,"},{"LOWER": "android"},{"LOWER": "developer"}]}
-{"label": "MAJOR|DEV MAJOR|relations", "pattern": [{"LOWER": "relations"}]}
+{"label": "MAJOR|BUSINESS MAJOR|relations", "pattern": [{"LOWER": "relations"}]}
 {"label": "MAJOR|AI MAJOR|embedded-systems", "pattern": [{"LOWER": "embedded"},{"LOWER": "systems"}]}
 {"label": "MAJOR|BUSINESS MAJOR|leadership", "pattern": [{"LOWER": "leadership"}]}
 {"label": "MAJOR|DEV MAJOR|software-engineer-(hdse)", "pattern": [{"LOWER": "software"},{"LOWER": "engineer"},{"LOWER": "(hdse)"}]}
-{"label": "MAJOR|DEV MAJOR|crop-physiology", "pattern": [{"LOWER": "crop"},{"LOWER": "physiology"}]}
+{"label": "MAJOR|GEOGRAPHY MAJOR|crop-physiology", "pattern": [{"LOWER": "crop"},{"LOWER": "physiology"}]}
 {"label": "MAJOR|DEV MAJOR|m-hort.", "pattern": [{"LOWER": "m"},{"LOWER": "hort."}]}
 {"label": "MAJOR|DEV MAJOR|b-ag.", "pattern": [{"LOWER": "b"},{"LOWER": "ag."}]}
-{"label": "MAJOR|DEV MAJOR|physics-and-engineering-physics", "pattern": [{"LOWER": "physics"},{"LOWER": "and"},{"LOWER": "engineering"},{"LOWER": "physics"}]}
+{"label": "MAJOR|PHYSICS MAJOR|physics-and-engineering-physics", "pattern": [{"LOWER": "physics"},{"LOWER": "and"},{"LOWER": "engineering"},{"LOWER": "physics"}]}
 {"label": "MAJOR|BUSINESS MAJOR|agriculture", "pattern": [{"LOWER": "agriculture"}]}
 {"label": "MAJOR|DESIGN MAJOR|theater-and-cinema-art-design", "pattern": [{"LOWER": "theater"},{"LOWER": "and"},{"LOWER": "cinema"},{"LOWER": "art"},{"LOWER": "design"}]}
 {"label": "MAJOR|DEV MAJOR|java", "pattern": [{"LOWER": "java"}]}
 {"label": "MAJOR|DEV MAJOR|accp-7.1-hdse", "pattern": [{"LOWER": "accp"},{"LOWER": "7.1"},{"LOWER": "hdse"}]}
-{"label": "MAJOR|DEV MAJOR|heat-engineering", "pattern": [{"LOWER": "heat"},{"LOWER": "engineering"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|heat-engineering", "pattern": [{"LOWER": "heat"},{"LOWER": "engineering"}]}
 {"label": "MAJOR|DEV MAJOR|audit", "pattern": [{"LOWER": "audit"}]}
 {"label": "MAJOR|DEV MAJOR|technology", "pattern": [{"LOWER": "technology"}]}
 {"label": "MAJOR|DEV MAJOR|fresher-.net", "pattern": [{"LOWER": "fresher"},{"LOWER": ".net"}]}
@@ -226,5 +225,5 @@
 {"label": "MAJOR|DEV MAJOR|css-&-javascriptprogramming", "pattern": [{"LOWER": "css"},{"LOWER": "&"},{"LOWER": "javascriptprogramming"}]}
 {"label": "MAJOR|BUSINESS MAJOR|accountancy", "pattern": [{"LOWER": "accountancy"}]}
 {"label": "MAJOR|DEV MAJOR|computer-engineer", "pattern": [{"LOWER": "computer"},{"LOWER": "engineer"}]}
-{"label": "MAJOR|DEV MAJOR|mechatronic-engineering-technology", "pattern": [{"LOWER": "mechatronic"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
+{"label": "MAJOR|AUTOMATION MAJOR|mechatronic-engineering-technology", "pattern": [{"LOWER": "mechatronic"},{"LOWER": "engineering"},{"LOWER": "technology"}]}
 {"label": "MAJOR|MATH MAJOR|mathematica", "pattern": [{"LOWER": "mathematica"}]}

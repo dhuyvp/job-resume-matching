@@ -11,7 +11,7 @@ def remove_empty_lists(list1):
                 new_list.append(item)
         return new_list
 
-with open('final_results.csv', 'r') as f :
+with open('final_results_all-roberta.csv', 'r') as f :
     reader = csv.reader(f)
     
     # with open('final.csv', 'w') as fb :
@@ -115,11 +115,15 @@ def guess_x1_x2_x3(x1, x2, x3) :
                 writer.writerow([job_id, len(rel_mat[job_id]), predict_id, ndcg1, ndcg3, ndcg5, ndcg7, ndcg10, ndcg20, ndcg50])
 
 
+
     print('number of jobs:', num_job)
-    print('avg ndcg@k with k=[1, 3, 5, 7, 10, 29, 50]: ', np.array(ndcg_vec) / num_job )
+    print('x1 x2 x3:', [x1, x2, x3])
+    print('avg ndcg@k with k=[1, 3, 5, 7, 10, 29, 50]: ', np.array(ndcg_vec) / num_job , '\n')
 
     return float(ndcg_vec[0])
 
 ################3
 
-guess_x1_x2_x3(9/14, 4/14, 1/14)
+guess_x1_x2_x3(8/10, 1/10, 1/10) # max
+guess_x1_x2_x3(6/10, 1/10, 3/10)
+guess_x1_x2_x3(1/10, 8/10, 1/10)

@@ -130,7 +130,7 @@ class Rules:
         # # print('check degrees score:', self.assign_degree_matching(match_scores))
 
         return self.assign_degree_matching(match_scores)
-
+    
     ##########################################
     #major matching
     def get_major_category(self, major):
@@ -150,10 +150,7 @@ class Rules:
 
     def get_major_score(self, resume, job):
         """calculate major matching score for one resume"""
-        resume_majors = []
-        for edu in resume['educations'] :
-            resume_majors.append(edu['major'])
-
+        resume_majors = resume['majors']
         job_majors, job_majors_categories = self.get_job_acceptable_majors(job)
         major_score = 0
         for r in resume_majors:
@@ -172,7 +169,18 @@ class Rules:
         resumes['Major job ' + str(job_index) + ' matching'] = self.get_major_score(resumes,jobs)
         return resumes
 
-
+    ###########################################
+    #jacard score
+    def get_jacard_score(self, job, resume) :
+        if job == {} or resume == {} :
+            return 0
+        return max(cosine_similarity(job['jacard'], resume['jacard']))[0] 
+    
+    #title score
+    def get_title_score(self, job, resume) :
+        if job == {} or resume == {} :
+            return 0
+        return max(cosine_similarity(job['title'], resume['majors_encode']))[0] 
 
     #########################################3
     # calculate matching scores
@@ -192,7 +200,17 @@ class Rules:
         # resume = self.major_matching(resume, job, job_index)
         majors_score = self.get_major_score(resume,job)
 
+        ## jacard score
+
         return [skills_score, degrees_score, majors_score]
     
+    def bonus_score(self, resume, job) :
+        #jacard score 
+        jacard_score = self.get_jacard_score(job, resume)
+
+        #title score 
+        title_score = self.get_title_score(job, resume)
+
+        return [jacard_score, title_score]
 
 #############################################################
